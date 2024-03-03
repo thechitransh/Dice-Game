@@ -38,7 +38,7 @@ document.querySelector(".btn--hold").addEventListener("click", function () {
     score[activePlayer] = value + score[activePlayer];
     document.querySelector(`#score--${activePlayer}`).textContent =
       score[activePlayer];
-    if (score[activePlayer] >= 10) {
+    if (score[activePlayer] >= 100) {
       playing = false;
       document
         .querySelector(`.player--${activePlayer}`)
