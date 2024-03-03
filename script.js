@@ -22,7 +22,6 @@ document.querySelector(".btn--roll").addEventListener("click", function () {
   if (playing) {
     dice.classList.remove("hidden");
     let num = Math.floor(Math.random() * 6) + 1;
-    console.log(num);
     dice.src = `${num}.png`;
     value = value + num;
     document.querySelector(`#current--${activePlayer}`).textContent = value;
